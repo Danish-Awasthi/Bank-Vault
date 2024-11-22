@@ -202,8 +202,7 @@ public:
             amount[l]=amount[l]-amt;
             amount[m]=amount[m]+amt;
             cout<<"Amount successfully transferred" << endl;
-            cout<<"Remaining balance in sender's account is:"<<amount[l]<<endl;
-            cout<<"Remaining balance in receiver's account is:"<<amount[m]<<endl;
+            cout<<"Remaining balance in account is:"<<amount[l]<<endl;
             updateDatabase(storedId[l],amount[l]);
             updateDatabase(storedId[m],amount[m]);
             string transactiont="Transferred"+to_string(amt)+"INR to "+to_string(storedId[m])+"\n"+"Received"+to_string(amt)+"INR from"+to_string(storedId[l]);
